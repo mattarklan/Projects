@@ -1,38 +1,132 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta charset="UTF-8">
-  <title>Matt Arklan | Mechatronics Engineer</title>
-  <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Matt Arklan | Mechatronics Engineer</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+
+<style>
+body {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  background: #0e1116;
+  color: #e6edf3;
+}
+
+.container {
+  max-width: 1000px;
+  margin: auto;
+  padding: 60px 30px;
+}
+
+header {
+  margin-bottom: 80px;
+}
+
+h1 {
+  font-weight: 600;
+  font-size: 42px;
+  margin: 0;
+}
+
+.subtitle {
+  color: #8b949e;
+  margin-top: 10px;
+}
+
+section {
+  margin-bottom: 70px;
+}
+
+h2 {
+  font-weight: 400;
+  font-size: 22px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  border-bottom: 1px solid #30363d;
+  padding-bottom: 10px;
+  margin-bottom: 30px;
+}
+
+.project {
+  margin-bottom: 40px;
+}
+
+.project h3 {
+  margin-bottom: 8px;
+  font-weight: 600;
+}
+
+.project p {
+  color: #8b949e;
+  line-height: 1.6;
+}
+
+.card {
+  background: #161b22;
+  padding: 30px;
+  border-radius: 8px;
+  border: 1px solid #30363d;
+  transition: 0.2s ease;
+}
+
+.card:hover {
+  border-color: #58a6ff;
+}
+
+.footer {
+  border-top: 1px solid #30363d;
+  padding-top: 30px;
+  color: #8b949e;
+  font-size: 14px;
+}
+</style>
 </head>
+
 <body>
+
+<div class="container">
 
 <header>
   <h1>Matt Arklan</h1>
-  <p>Mechatronics Engineer | Power Electronics | Embedded Systems</p>
+  <div class="subtitle">
+    Mechatronics Engineer — Power Electronics — Embedded Systems
+  </div>
 </header>
 
 <section>
   <h2>Projects</h2>
 
-  <div class="project">
+  <div class="card project">
     <h3>Totem-Pole PFC Converter</h3>
-    <p><strong>Problem:</strong> High efficiency AC-DC conversion.</p>
-    <p><strong>My Role:</strong> HF leg current sensing design, gate drive layout, firmware control loop tuning.</p>
+    <p>
+      Designed high-frequency current sensing on GaN legs, implemented control loop tuning, 
+      and optimized switching losses for improved efficiency.
+    </p>
   </div>
 
-  <div class="project">
+  <div class="card project">
     <h3>Motor Control System</h3>
-    <p><strong>Problem:</strong> Closed-loop speed control with encoder feedback.</p>
-    <p><strong>My Role:</strong> PWM generation, current limiting, fault handling.</p>
+    <p>
+      Developed closed-loop PWM control with encoder feedback, fault protection,
+      and current limiting strategy for BLDC drive.
+    </p>
   </div>
 
 </section>
 
 <section>
   <h2>Contact</h2>
-  <p>Email: your@email.com</p>
+  <div class="footer">
+    Email: your@email.com  
+    <br>
+    GitHub: github.com/mattarklan
+  </div>
 </section>
+
+</div>
 
 </body>
 </html>
